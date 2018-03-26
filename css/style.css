@@ -1,0 +1,108 @@
+body {
+	text-align: center; 
+	margin:  0px;
+
+}
+
+footer	{
+	text-transform: uppercase;
+	padding: 0px 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+
+}
+
+.name {
+	color:  #F15B31;
+	font-weight: 700;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+.copywrite {
+	float: left;
+}
+
+.message {
+	float: right;
+}
+img {
+	margin:  40px 8px;
+}
+
+a,a:visited {
+	text-decoration: none ;
+	color:  aquamarine;
+	padding: 0;
+	border-bottom: 2px solid transparent;
+}
+
+nav a:hover { 
+	color:  white;
+	border: 2.5px solid white;
+}
+
+nav {
+	background-color: #00A6B3;
+}
+
+main {
+	width: 850px;
+	margin: 35px auto;
+}
+
+
+h1 {
+	font-family: raleway, san-serif;
+	color: #0D2C40;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 45px;
+	margin:  0;
+}
+
+h2 {
+	font-family: raleway,san-serif;
+	color: #0D2C40;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+h3 {
+	background-color: orangered;
+	border: 0px;
+	margin: 0px;
+}
+
+.instruct_links {
+	font-family: raleway,san-serif;
+	color: #0D2C40;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 0px 20px;
+}
+
+header {
+	background-color: #F15B31;
+	color: white;
+	padding: 20px 20px;
+}
+
+.instructions {
+	font-family: "Droid Serif", san-serif;
+	line-height: 26px;
+	font-size: 18px;
+}
+
