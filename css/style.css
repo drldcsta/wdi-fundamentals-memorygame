@@ -4,6 +4,10 @@ body {
 
 }
 
+#status {
+	color: red;
+	font-size: 26px;
+}
 footer	{
 	text-transform: uppercase;
 	padding: 0px 20px;

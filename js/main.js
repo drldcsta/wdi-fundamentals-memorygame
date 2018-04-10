@@ -25,26 +25,70 @@ var cards = [
 ];
 var cardsInPlay = [];
 
+// var resetBoard = function() {
+// 	for (var i = 0 ; i < cardsInPlay.length;i++) {
+// 		cardsInPlay[i].
+// 	}
+// }
 
-var checkForMatch = function() {
+var flipCard = function() {
+	var cardId = this.getAttribute('data-id');
+    console.log("User filpped " + cards[cardId].rank);
+    console.log("User filpped " + cards[cardId].suit);
+    console.log("User filpped " + cards[cardId].cardImage);
+    cardsInPlay.push(cards[cardId].rank);
+    this.setAttribute("src",cards[cardId].cardImage)
+    var status = document.getElementById("status")
     if (cardsInPlay.length >= 2) {
         if (cardsInPlay[0] === cardsInPlay[1]) {
-            console.log("You found a match!");
+            // alert("You found a match!");
+            document.getElementById("status").innerHTML = "Congratulations, you won!";
         } else {
-            console.log("Sorry, try again.");
+            document.getElementById("status").innerHTML = "Sorry, please try again";
         }
     } else {
         console.log("You need to flip another card")
     }
 }
 
-var flipCard = function(cardId) {
-    console.log("User filpped " + cards[cardId].rank)
-    console.log("User filpped " + cards[cardId].suit)
-    console.log("User filpped " + cards[cardId].cardImage)
-    cardsInPlay.push(cards[cardId].rank)
-    checkForMatch()
+var createBoard = function() { 
+	for (var i = 0; i < cards.length; i++) {
+		var dealtCard = document.createElement('img');
+		dealtCard.setAttribute('src','images/back.png');
+		dealtCard.setAttribute('data-id',i);
+		dealtCard.addEventListener("click",flipCard);
+		document.getElementById("game-board").appendChild(dealtCard);
+	}
+	var status = document.createElement('div');
+	var statusText = document.createTextNode("Waiting for player to pick a card");
+	status.setAttribute("id","status");
+	status.appendChild(statusText);
+	document.getElementById("game-board").appendChild(status);
 }
 
-flipCard(2)
-flipCard(1)
+
+
+
+createBoard()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//flipCard(2)
+//flipCard(1)
