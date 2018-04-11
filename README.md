@@ -18,7 +18,10 @@ Pre-work for GA's WDI program, a Memory Game.
 
 ### Issues/TODO
 * CSS is a mess (I finally "get" CSS jokes)
-* Something is screwy with the meta tags
- * Slack unfurl definitely seems broken, FB and twitter likely broken
+* Something is screwy with the meta tags?
+ * ~~Slack unfurl definitely seems broken, FB and twitter likely broken~~
 * what I'm doing to hide `.instructions` can't possibly be the best way to do this. 
+ * besides being ugly is probably an accessibilty issue
+ * TODO: once converted to jquery use the toggleClass to hide/unhide
 * There's almost certainly no way that using iframes to set background videos makes sense
+* Figure out why the `[Stop video]` button isn't centered vertically
