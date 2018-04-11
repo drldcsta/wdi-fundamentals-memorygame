@@ -28,10 +28,7 @@ footer {
     bottom: 0;
 }
 
-.name {
-    color: #F15B31;
-    font-weight: 700;
-}
+
 
 .clearfix:after {
     visibility: hidden;
@@ -135,4 +132,10 @@ header {
     top: unset;
     left: unset;
     opacity: 1;
+}
+
+.name {
+    color: red;
+    font-weight: 700;
+    text-transform: unset;
 }
