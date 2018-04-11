@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 
 <head>
     <title>Memory Card Game</title>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
+    <!-- Favicon info created w https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Website Preview Tags for Search Engines, Social Networks, and Messaging Platforms. Built via https://mobilecavalry.com/lookout/website-preview-builder-meta-tag-generator-->
+    <!-- Search Tags -->
+    <title>AndAt Industries presents: The Memory Game</title>
+    <meta name="description" content="A simple Memory game built in preparation for the General Assembly WDI course. Constructive Criticism Encouraged.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- FB Open Graph data -->
+    <meta property="og:title" content="AndAt Industries presents: The Memory Game">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://drl.fyi/images/andat.jpg">
+    <meta property="og:description" content="A simple Memory game built in preparation for General Assembly's WDI course. Constructive Criticism Encouraged.">
+    <meta property="og:url" content="https://drl.fyi">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AndAt Industries presents: The Memory Game">
+    <meta name="twitter:description" content="A simple Memory game built in preparation for General Assembly's WDI course. Constructive Criticism Encouraged.">
+    <meta name="twitter:image" content="https://drl.fyi/images/andat.jpg">
+    <meta name="twitter:url" content="https://drl.fyi">
 
-<body>
-    <header id="header" class="">
-        <h1>Memory Game</h1>
-    </header>
-    <!-- /header -->
-    <h3 id="header">A <a href="https://twitter.com/drldcsta" target="__blank">drldcsta</a> Joint</h3>
-    <nav>
-        <a class="instruct_links" href="#instructions">Instructions</a>
-        <a class="instruct_links" href="#game">Game</a>
-    </nav>
-    <main>
-        <h2 id="instructions">Instructions</h2>
-        <p class="instructions">Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
-        <div id="game-board" class="board clearfix">
-
+    <body>
+        <div style="position: fixed; z-index: -99; width: 100%; height: 100%" id="video-container">
         </div>
-    </main>
-    <footer class="clearfix">
-        <p class="copywrite">Copyright 2018</p>
-        <p class="message">Created with &hearts; by <span class="name">GA</span></p>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-    
+        <header id="header" class="">
+            <h1>Memory Game</h1>
+        </header>
+        <!-- /header -->
+        <h3 id="header">A <a href="https://twitter.com/drldcsta" target="__blank">drldcsta</a> Joint</h3>
+        <nav>
+            <a class="instruct_links" onclick="showInstructions()">Instructions</a>
+            <!-- <a class="instruct_links" href="#game-board">Game</a> -->
+        </nav>
+        <main>
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+            </div>
+            <div id="game-board" class="clearfix"></div>
+        </main>
+        <footer class="clearfix">
+            <p class="copywrite">Copyright 2018, source available on <a href="https://github.com/drldcsta/wdi-fundamentals-memorygame" target="__blank">Github</a></p>
+            <p style="display: none;" id="vidButton">
+                <button onclick="clearVideo()">stop video</button>
+                <p class="message">Created with <a href="#" onclick="setBackgroundVideo('JVSIhNYlKIY');">π</a> by <span class="name">AndAt Industries</span></p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
 
 </html>

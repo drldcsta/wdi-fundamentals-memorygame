@@ -1,112 +1,138 @@
 body {
-	text-align: center; 
-	margin:  0px;
+    text-align: center;
+    margin: 0px;
+}
 
+.vidButton {
+    font-size: 15px;
+    padding: 5px;
+    border: 5px;
 }
 
 #status {
-	color: red;
-	font-size: 26px;
+    color: red;
+    font-size: 26px;
 }
-footer	{
-	text-transform: uppercase;
-	padding: 0px 20px;
-	background-color: #0D2C40;
-	color: white;
-	font-size: 14px;
-	letter-spacing: .08em;
-	font-weight: 500;
 
+footer {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    /* padding: 0px -5px 0 5px; */
+    background-color: #0D2C40;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-weight: 500;
+
+    bottom: 0;
 }
 
 .name {
-	color:  #F15B31;
-	font-weight: 700;
+    color: #F15B31;
+    font-weight: 700;
 }
 
 .clearfix:after {
-	visibility: hidden;
-	display: block;
-	content: " ";
-	clear: both;
-	height: 0;
-	font-size: 0;
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
 }
 
 .copywrite {
-	float: left;
+    float: left;
 }
+
 
 .message {
-	float: right;
+    float: right;
 }
+
 img {
-	margin:  40px 8px;
+    margin: 40px 8px;
 }
 
-a,a:visited {
-	text-decoration: none ;
-	color:  aquamarine;
-	padding: 0;
-	border-bottom: 2px solid transparent;
+a,
+a:visited {
+    text-decoration: none;
+    color: aquamarine;
+    padding: 0;
+    border-bottom: 2px solid transparent;
 }
 
-nav a:hover { 
-	color:  white;
-	border: 2.5px solid white;
+nav a:hover {
+    color: white;
 }
 
 nav {
-	background-color: #00A6B3;
+    background-color: #00A6B3;
 }
 
 main {
-	width: 850px;
-	margin: 35px auto;
+    width: 850px;
+    margin: 35px auto;
 }
 
 
 h1 {
-	font-family: raleway, san-serif;
-	color: #0D2C40;
-	letter-spacing: 1px;
-	font-weight: 400;
-	font-size: 45px;
-	margin:  0;
+    font-family: raleway, san-serif;
+    color: #0D2C40;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 45px;
+    margin: 0;
 }
 
 h2 {
-	font-family: raleway,san-serif;
-	color: #0D2C40;
-	letter-spacing: 1px;
-	font-weight: 600;
-	font-size: 20px;
+    font-family: raleway, san-serif;
+    color: #0D2C40;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 h3 {
-	background-color: orangered;
-	border: 0px;
-	margin: 0px;
+    background-color: orangered;
+    border: 0px;
+    margin: 0px;
 }
 
 .instruct_links {
-	font-family: raleway,san-serif;
-	color: #0D2C40;
-	letter-spacing: 1px;
-	font-weight: 600;
-	font-size: 20px;
-	padding: 0px 20px;
+    font-family: raleway, san-serif;
+    color: pink;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 20px;
 }
 
 header {
-	background-color: #F15B31;
-	color: white;
-	padding: 20px 20px;
+    background-color: #F15B31;
+    color: white;
+    padding: 20px 20px;
 }
 
 .instructions {
-	font-family: "Droid Serif", san-serif;
-	line-height: 26px;
-	font-size: 18px;
+	/* hide instructions out of viewport. (must be better way) */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+    /* height: 0; */
+    font-family: "Droid Serif", san-serif;
+    line-height: 26px;
+    font-size: 18px;
+    transition: opacity 1s, height 1s;
+    -webkit-transition: opacity 1s, height 1s;
+    -moz-transition: opacity 1s, height 1s;
 }
 
+.show-instructions {
+    position: unset;
+    top: unset;
+    left: unset;
+    opacity: 1;
+}
